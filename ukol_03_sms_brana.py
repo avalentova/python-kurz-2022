@@ -28,12 +28,12 @@ def delka(telefonni_cislo):
 
 def cena(text):
     vypocet = math.ceil(len(text)/180) * 3
-    print(f"Výsledná cena zprávy je {vypocet} Kč")
+    return vypocet
 
 telefonni_cislo = input("Zadej telefonní číslo příjemce: ")
 
 if delka(telefonni_cislo) == True:
     text = input ("Zadej text zprávy: ")
-    cena(text)
+    print(f"Výsledná cena zprávy je {cena(text)} Kč")
 else:
     print ("Neplatné telefonní číslo.")
