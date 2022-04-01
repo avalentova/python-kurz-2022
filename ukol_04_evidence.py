@@ -21,17 +21,22 @@ skoda = Auto("1P3 4747", "Škoda","Octavia",41253)
 
 dotaz = input("V nabídce máme vozidlo Peugeot a Škoda. Kterou značku si přejete vypůjčit? ")
 
-if dotaz == "Škoda":
-     print(skoda.get_info())
-     skoda.pujc_auto()
+if dotaz == "Peugeot":
+    auto = peugeot
+elif dotaz == 'Škoda':
+    auto = skoda
 else:
-    print(peugeot.get_info())
-    peugeot.pujc_auto()
+    print('Zadali jste značku, kterou nemáme v nabídce.')
+
+print(auto.get_info())
+auto.pujc_auto()
 
 dotaz2 = input("Jaké další vozidlo si přejete vypůjčit? ")
-if dotaz2 == "Škoda":
-     print(skoda.get_info())
-     skoda.pujc_auto()
+if dotaz2 == "Peugeot":
+    auto = peugeot
+elif dotaz2 == 'Škoda':
+    auto = skoda
 else:
-    print(peugeot.get_info())
-    peugeot.pujc_auto()
+    print('Zadali jste značku, kterou nemáme v nabídce.')
+
+auto.pujc_auto()
