@@ -31,6 +31,7 @@ else:
 print(auto.get_info())
 auto.pujc_auto()
 
+# kontrola zapůjčení
 dotaz2 = input("Jaké další vozidlo si přejete vypůjčit? ")
 if dotaz2 == "Peugeot":
     auto = peugeot
