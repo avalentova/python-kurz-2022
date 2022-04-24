@@ -21,3 +21,7 @@ for auto in ujete_km:
 # sečtení pouze ujetých km
 celkovy_pocet = sum(pocty_km)
 print (celkovy_pocet)
+
+# druhý způsob sečtení
+soucet_km = sum([radek[1] for radek in ujete_km])
+print(soucet_km)
