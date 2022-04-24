@@ -17,3 +17,7 @@ posta = "".join(posta)
 psc_posta = re.findall("\d{3} \d{2} \s*\w*\s*\w*\s*\w*", posta)
 print(psc_posta)
 
+#hledám spojení PSČ a města 2
+psc_posta = re.findall("\d{3}\s\d{2}\s[a-žA-Ž\s*a-žA-Ž]*\d*", posta)
+print(psc_posta)
+
